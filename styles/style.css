@@ -132,8 +132,6 @@
 
 .main__section-title {
   color: var(--title-color, #353430);
-  min-width: 315px;
-  max-width: min-content;
 }
 
 .main__section-content {
