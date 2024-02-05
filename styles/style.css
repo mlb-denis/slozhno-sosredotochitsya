@@ -20,7 +20,6 @@
   align-items: start;
   justify-items: end;
   block-size: max(100vh, 668px);
-  min-height: 375px;
   padding: var(--general-padding, 10px);
 }
 
@@ -37,7 +36,7 @@
 .header__rec::after {
   content: '';
   background-color: var(--accent-color, #ff0070);
-  filter: drop-shadow(0px 0px 4px var(--accent-color, #ff0070));
+  filter: drop-shadow(0px 0px 4px 2px var(--accent-color, #ff0070));
   inline-size: 9px;
   block-size: 9px;
   border-radius: 50%;
@@ -224,19 +223,6 @@
 }
 
 @media (width >= 768px) {
-  @media (width < 1024px) {
-    :root {
-      --menu-margin: 172px;
-      --promo-margin: 162px;
-    }
-  }
-
-  :root {
-    --general-padding: 20px;
-    --main-padding-block: 60px;
-    --main-gap: 80px;
-  }
-
   .decorations {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
@@ -286,11 +272,6 @@
 }
 
 @media (width >= 1024px) {
-  :root {
-    --menu-margin: 0;
-    --promo-margin: 114px;
-  }
-
   .header__theme-menu {
     justify-self: center;
   }
