@@ -36,7 +36,7 @@
 .header__rec::after {
   content: '';
   background-color: var(--accent-color, #ff0070);
-  filter: drop-shadow(0px 0px 4px 2px var(--accent-color, #ff0070));
+  box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
   inline-size: 9px;
   block-size: 9px;
   border-radius: 50%;
@@ -282,7 +282,7 @@
 
   .header .decorations,
   .footer .decorations {
-    text-shadow: 2px 2px 0px #ff0070;
+    text-shadow: 4px 4px 0px #ff0070;
   }
 
   .header__promo {
